@@ -74,7 +74,7 @@ function moviesearch(searchterm) {
         console.log("Title: " + response.data.Title);
         console.log("Release Year: " + response.data.Year);
         console.log("IMdB Rating: " + response.data.imdbRating);
-        console.log("Rotten Tomatoes Rating: " + response.data.tomatoRating);
+        console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
         console.log("Country: " + response.data.Country);
         console.log("Language: " + response.data.Language);
         console.log("Plot: " + response.data.Plot);
