@@ -72,7 +72,18 @@ function dowhatsays() {
         }
 
         var txt = data.split(',');
-        
-        spotifysearch(txt[1]);
+        switch(txt[0]){
+            case "concert-this":
+                concertsearch(txt[1]);
+                break;
+            case "spotify-this-song":
+                if (txt[1]) {
+                    spotifysearch(txt[1]);
+                } else { spotifysearch("The Sign") };
+                break;
+            case "movie-this":
+                moviesearch(txt[1]);
+                break;
         }
-    )}
+    })
+}
