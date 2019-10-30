@@ -67,33 +67,24 @@ function spotifysearch() {
         });
 };
 
-function moviesearch() {
-    var omdbURL = 'http://www.omdbapi.com/?t=' + movie + '&apikey=' + omdbKey + '&plot=short&tomatoes=true';
+function moviesearch(searchterm) {
+    var omdbURL = "http://www.omdbapi.com/?t=" + searchterm + "&y=&plot=short&apikey=trilogy";
 
-    request(omdbURL, function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-            var body = JSON.parse(body);
+    axios.get(omdbURL).then(function (response) {
+        console.log("Title: " + response.data.Title);
+        console.log("Release Year: " + response.data.Year);
+        console.log("IMdB Rating: " + response.data.imdbRating);
+        console.log("Rotten Tomatoes Rating: " + response.data.tomatoRating);
+        console.log("Country: " + response.data.Country);
+        console.log("Language: " + response.data.Language);
+        console.log("Plot: " + response.data.Plot);
+        console.log("Actors: " + response.data.Actors);
+            
 
-            console.log("Title: " + body.Title);
-            console.log("Release Year: " + body.Year);
-            console.log("IMdB Rating: " + body.imdbRating);
-            console.log("Country: " + body.Country);
-            console.log("Language: " + body.Language);
-            console.log("Plot: " + body.Plot);
-            console.log("Actors: " + body.Actors);
-            console.log("Rotten Tomatoes Rating: " + body.tomatoRating);
-
-        } else {
-            console.log('Error occurred.')
-        }
-        if (movie === "Mr. Nobody") {
-            console.log("-----------------------");
-            console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
-            console.log("It's on Netflix!");
-
-        }
-    });
-}
+        }).catch(function(error){
+            console.log('Error occurred.');
+        })
+    };
 
 function dowhatsays() {
 
