@@ -3,7 +3,7 @@
 ![Capture2](/Images/moviethisscreen.jpg)
 
 ## Download Repository
-Copy the below link:
+Copy the link to clone:
 <https://github.com/KyleRLamont/Liri-Bot.git>
 
 ## Problem: 
