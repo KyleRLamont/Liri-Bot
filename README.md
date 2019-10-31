@@ -10,7 +10,7 @@ The app is organized as-
 3. Each function is then separate, allowing for easier editing later and adding to functions.
 
 ## Using the App: 
-To use the app, simply clone the github repository to your computer. In bash/command, run node liri.js movie-this "Movie title," spotify-this-song "Song title," concert-this "Artist name," or do-what-it-says. You will need your own spotify API key in order to use the spotify feature. That can be obtained here.
+To use the app, simply clone the github repository to your computer. In bash/command, run node liri.js movie-this "Movie title," spotify-this-song "Song title," concert-this "Artist name," or do-what-it-says. You will need your own spotify API key in order to use the spotify feature. That can be obtained here. Per Spotify, it is possible for null to be returned for the preview_url. 
 
 [Spotify](https://developer.spotify.com/dashboard/login)
 
@@ -21,6 +21,8 @@ To use the app, simply clone the github repository to your computer. In bash/com
 ![Capture2](/Images/moviethisscreen.jpg)
 
 ![Capture3](/Images/spotifyscreencapture.jpg)
+
+![Capture4](/Images/dowhatsays.jpg)
 
 ## Technologies Used: 
 1. Node.js
