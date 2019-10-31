@@ -1,5 +1,7 @@
 # Liri-Bot
 
+![Capture2](/Images/moviethisscreen.jpg)
+
 ## Problem: 
 Liri is just like Siri, only uses language instead of speech. I wanted a way to take text input and have it run commands similar to our favorite voice activated helper, but to have it run with Node.js. Everyone uses Node, right?
 
