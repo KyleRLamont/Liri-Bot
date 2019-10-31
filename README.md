@@ -24,6 +24,10 @@ To use the app, simply clone the github repository to your computer. In bash/com
 
 ![Capture4](/Images/dowhatsays.jpg)
 
+![Capture5](/Images/dowhatsays2.jpg)
+
+![Capture6](/Images/dowhatsays3.jpg)
+
 ## Technologies Used: 
 1. Node.js
 2. Axios
